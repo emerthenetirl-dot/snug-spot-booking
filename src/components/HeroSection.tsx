@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/glamping-hero.jpg";
+import heroImage from "@/assets/secret-lake-hero.jpg";
 
 const HeroSection = () => {
   const scrollToBooking = () => {
@@ -19,11 +19,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-          Luxury Forest
-          <span className="block text-nature-accent">Glamping</span>
+          The Secret
+          <span className="block text-nature-accent">Lake</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Escape to nature without sacrificing comfort. Experience premium glamping in our beautifully appointed forest sanctuary.
+          Unlock true relaxation at Dolmen Lodge. Luxury lakeside retreat with private hot tub and breathtaking Irish countryside views.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
@@ -31,7 +31,7 @@ const HeroSection = () => {
             onClick={scrollToBooking}
             className="bg-nature-primary hover:bg-nature-primary/90 text-white px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
           >
-            Book Your Stay
+            Book Dolmen Lodge
           </Button>
           <Button 
             variant="outline" 

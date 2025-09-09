@@ -16,20 +16,20 @@
     --popover: 42 31% 97%;
     --popover-foreground: 25 25% 15%;
 
-    /* Primary - Forest Green */
-    --primary: 142 76% 36%;
+    /* Primary - Secret Lake Teal */
+    --primary: 172 65% 28%;
     --primary-foreground: 42 31% 97%;
 
-    /* Secondary - Warm Brown */
-    --secondary: 25 76% 31%;
+    /* Secondary - Deep Lake Green */
+    --secondary: 158 58% 25%;
     --secondary-foreground: 42 31% 97%;
 
     /* Muted - Soft Cream */
     --muted: 42 21% 93%;
     --muted-foreground: 25 15% 45%;
 
-    /* Accent - Golden */
-    --accent: 43 74% 66%;
+    /* Accent - Lake Blue */
+    --accent: 195 75% 45%;
     --accent-foreground: 25 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
@@ -37,14 +37,14 @@
 
     --border: 42 21% 87%;
     --input: 42 21% 87%;
-    --ring: 142 76% 36%;
+    --ring: 172 65% 28%;
 
     --radius: 0.75rem;
 
-    /* Custom glamping tokens */
-    --nature-primary: 142 76% 36%;
-    --nature-secondary: 25 76% 31%;
-    --nature-accent: 43 74% 66%;
+    /* Custom Secret Lake tokens */
+    --nature-primary: 172 65% 28%;
+    --nature-secondary: 158 58% 25%;
+    --nature-accent: 195 75% 45%;
     --nature-cream: 42 31% 97%;
     --nature-soft: 42 21% 93%;
     
@@ -89,16 +89,16 @@
     --popover: 25 25% 10%;
     --popover-foreground: 42 31% 95%;
 
-    --primary: 142 76% 45%;
+    --primary: 172 65% 35%;
     --primary-foreground: 25 25% 8%;
 
-    --secondary: 25 76% 40%;
+    --secondary: 158 58% 32%;
     --secondary-foreground: 42 31% 95%;
 
     --muted: 25 25% 15%;
     --muted-foreground: 42 15% 65%;
 
-    --accent: 43 74% 70%;
+    --accent: 195 75% 55%;
     --accent-foreground: 25 25% 8%;
 
     --destructive: 0 62.8% 50%;
@@ -106,12 +106,12 @@
 
     --border: 25 25% 20%;
     --input: 25 25% 20%;
-    --ring: 142 76% 45%;
+    --ring: 172 65% 35%;
 
     /* Dark mode custom tokens */
-    --nature-primary: 142 76% 45%;
-    --nature-secondary: 25 76% 40%;
-    --nature-accent: 43 74% 70%;
+    --nature-primary: 172 65% 35%;
+    --nature-secondary: 158 58% 32%;
+    --nature-accent: 195 75% 55%;
     --nature-cream: 25 25% 10%;
     --nature-soft: 25 25% 12%;
   }

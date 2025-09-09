@@ -18,9 +18,9 @@ const BookingForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const pricePerNight = 299;
-  const cleaningFee = 75;
-  const serviceFee = 45;
+  const pricePerNight = 395;
+  const cleaningFee = 50;
+  const serviceFee = 25;
 
   const nights = checkIn && checkOut ? differenceInDays(checkOut, checkIn) : 0;
   const subtotal = nights * pricePerNight;
@@ -36,15 +36,15 @@ const BookingForm = () => {
     <section id="booking-section" className="py-16 px-4 bg-nature-soft">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Reserve Your Experience</h2>
-          <p className="text-xl text-muted-foreground">Book your luxury glamping adventure today</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Reserve Dolmen Lodge</h2>
+          <p className="text-xl text-muted-foreground">Book your luxury lakeside escape at The Secret Lake</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Booking Form */}
           <Card className="shadow-lg border-0 bg-gradient-to-br from-card to-nature-cream">
             <CardHeader>
-              <CardTitle className="text-2xl text-nature-primary">Booking Details</CardTitle>
+              <CardTitle className="text-2xl text-nature-primary">Book Dolmen Lodge</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -220,9 +220,9 @@ const BookingForm = () => {
               </CardHeader>
               <CardContent>
                 <blockquote className="text-sm italic text-muted-foreground">
-                  "An absolutely magical experience! The perfect blend of luxury and nature. We'll definitely be back!"
+                  "The Secret Lake exceeded all expectations! The hot tub overlooking the lake was absolutely magical. Pure tranquility."
                 </blockquote>
-                <cite className="text-xs text-muted-foreground mt-2 block">- Sarah M.</cite>
+                <cite className="text-xs text-muted-foreground mt-2 block">- Emma & John, Dublin</cite>
               </CardContent>
             </Card>
           </div>

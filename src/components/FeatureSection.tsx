@@ -1,36 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Wifi, Car, Coffee, Utensils, Bed, TreePine } from "lucide-react";
+import { Wifi, Car, Coffee, Waves, Bed, TreePine } from "lucide-react";
 
 const features = [
   {
-    icon: Bed,
-    title: "Luxury Accommodations",
-    description: "King-size bed with premium linens and memory foam mattress"
+    icon: Waves,
+    title: "Private Hot Tub",
+    description: "Relax in your own hot tub while enjoying stunning lake views"
   },
   {
-    icon: Utensils,
-    title: "Full Kitchen",
-    description: "Complete kitchen with modern appliances and cookware"
+    icon: Bed,
+    title: "Luxury Lodge",
+    description: "Spacious Dolmen Lodge with premium furnishings and comfort"
+  },
+  {
+    icon: TreePine,
+    title: "Lakeside Location",
+    description: "Exclusive access to pristine lake and Irish countryside"
   },
   {
     icon: Coffee,
-    title: "Morning Coffee",
-    description: "Premium coffee and tea service with stunning forest views"
+    title: "Full Kitchen",
+    description: "Complete kitchen facilities for your convenience"
   },
   {
     icon: Wifi,
-    title: "High-Speed WiFi",
-    description: "Stay connected with complimentary high-speed internet"
+    title: "WiFi & Amenities",
+    description: "Modern conveniences in a natural setting"
   },
   {
     icon: Car,
     title: "Private Parking",
-    description: "Dedicated parking space right next to your glamping unit"
-  },
-  {
-    icon: TreePine,
-    title: "Nature Access",
-    description: "Direct access to hiking trails and forest activities"
+    description: "Secure parking included with your stay"
   }
 ];
 
@@ -39,9 +39,9 @@ const FeatureSection = () => {
     <section className="py-16 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Luxury Meets Nature</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Dolmen Lodge Experience</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need for the perfect glamping experience, thoughtfully designed for your comfort
+            Every detail crafted for your perfect lakeside retreat at The Secret Lake
           </p>
         </div>
 
