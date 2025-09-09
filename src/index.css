@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Glamping Booking Engine Design System - Nature-inspired luxury */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core colors - Natural palette */
+    --background: 42 31% 97%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 31% 97%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 31% 97%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Forest Green */
+    --primary: 142 76% 36%;
+    --primary-foreground: 42 31% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm Brown */
+    --secondary: 25 76% 31%;
+    --secondary-foreground: 42 31% 97%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Soft Cream */
+    --muted: 42 21% 93%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Golden */
+    --accent: 43 74% 66%;
+    --accent-foreground: 25 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 42 31% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 21% 87%;
+    --input: 42 21% 87%;
+    --ring: 142 76% 36%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom glamping tokens */
+    --nature-primary: 142 76% 36%;
+    --nature-secondary: 25 76% 31%;
+    --nature-accent: 43 74% 66%;
+    --nature-cream: 42 31% 97%;
+    --nature-soft: 42 21% 93%;
+    
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(var(--nature-primary)), hsl(var(--nature-secondary)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--nature-primary) / 0.1), hsl(var(--nature-secondary) / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(var(--nature-cream)), hsl(var(--nature-soft)));
+    
+    /* Shadows */
+    --shadow-nature: 0 10px 30px -10px hsl(var(--nature-primary) / 0.2);
+    --shadow-warm: 0 8px 25px -8px hsl(var(--nature-secondary) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--nature-primary) / 0.1);
+    
+    /* Transitions */
+    --transition-nature: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +79,62 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode - Cozy evening glamping theme */
+    --background: 25 25% 8%;
+    --foreground: 42 31% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 25% 10%;
+    --card-foreground: 42 31% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 25% 10%;
+    --popover-foreground: 42 31% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 76% 45%;
+    --primary-foreground: 25 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 76% 40%;
+    --secondary-foreground: 42 31% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 25% 15%;
+    --muted-foreground: 42 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 43 74% 70%;
+    --accent-foreground: 25 25% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 42 31% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 25% 20%;
+    --input: 25 25% 20%;
+    --ring: 142 76% 45%;
+
+    /* Dark mode custom tokens */
+    --nature-primary: 142 76% 45%;
+    --nature-secondary: 25 76% 40%;
+    --nature-accent: 43 74% 70%;
+    --nature-cream: 25 25% 10%;
+    --nature-soft: 25 25% 12%;
+  }
+
+  /* Custom CSS classes using the design system */
+  .bg-gradient-nature {
+    background: var(--gradient-nature);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-nature {
+    box-shadow: var(--shadow-nature);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .transition-nature {
+    transition: var(--transition-nature);
   }
 }
 

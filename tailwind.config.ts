@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom glamping colors
+        nature: {
+          primary: "hsl(var(--nature-primary))",
+          secondary: "hsl(var(--nature-secondary))",
+          accent: "hsl(var(--nature-accent))",
+          cream: "hsl(var(--nature-cream))",
+          soft: "hsl(var(--nature-soft))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
